@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+#port{
+    width: 100%;
+    margin-top: 30vh;
+    overflow: hidden;
+}
+.port_inner{
+    padding: 16px;
+}
+.port_title{
+    width: 100%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    color: var(--black100);
+    margin-bottom: 16px;
+    border-bottom: 0.4vw solid var(--black100);
+    text-indent: -0.27vw;
+}
+.port_title em{
+    font-size: 24;
+    font-weight: 400;
+}
+.port_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 7000px;
+}
+.port_wrap .port_item{
+    width: 500px;
+    height: 70vh;
+    background-color: var(--subBg100);
+    padding: 40px;
+    margin-right: 20px;
+}
+.port_wrap .port_item.p1{
+    background-color: var(--subBg100);
+}
+.port_wrap .port_item.p2{
+    background-color: var(--subBg200);
+}
+.port_wrap .port_item.p3{
+    background-color: var(--subBg300);
+}
+.port_wrap .port_item.p4{
+    background-color: var(--subBg400);
+}
+.port_wrap .port_item.p5{
+    background-color: var(--subBg500);
+}
+.port_wrap .port_item.p6{
+    background-color: var(--subBg100);
+}
+.port_wrap .port_item.p7{
+    background-color: var(--subBg200);
+}
+.port_wrap .port_item.p8{
+    background-color: var(--subBg300);
+}
+.port_wrap .port_item.p9{
+    background-color: var(--subBg400);
+}
+.port_wrap .port_item.p10{
+    background-color: var(--subBg500);
+}
+.port_wrap .port_item .num{
+    font-size: 32px;
+    font-family: var(--mainNum-font);
+}
+.port_wrap .port_item .img{
+    display: block;
+    filter: saturate(0);
+    margin-top: -20px;
+    transition: all 0.3s;
+}
+.port_wrap .port_item:hover .img{
+    filter: saturate(100%);
+    margin-top: 0px;
+}
+.port_wrap .port_item .title{
+    font-size: 24px;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: 700;
+    color: var(--black100);
+    border-bottom: 2px solid var(--black100);
+    margin-bottom: 16px;
+}
+.port_wrap .port_item .desc{
+    font-size: 16px;
+    text-align: justify;
+    /* 텍스트 양쪽 정렬 */
+}
+.port_wrap .port_item .site{
+    border: 1px solid var(--black100);
+    display: block;
+    text-align: center;
+    padding: 10px 24px;
+    margin-top: 24px;
+    transition: all 0.3s;
+}
+.port_wrap .port_item .site:hover{
+    background-color: var(--black300);
+    color: var(--white);
+}
+
+@media (max-width:800px){
+    .port_title{
+        font-size: 30px;
+        height: auto;
+    }
+    .port_wrap .port_item{
+        height: 400px;
+        height: auto;
+        padding: 40px 30px;
+    }
+}
